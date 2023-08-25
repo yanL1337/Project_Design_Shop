@@ -81,4 +81,115 @@ img {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+}
+
+/* - Footer */
+
+footer {
+  display: grid;
+  grid-template-columns: 33.4% auto 33.4% auto;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+h3 {
+  margin-bottom: 40px;
+  font-size: 1.3rem;
+}
+
+span {
+  font-weight: bold;
+}
+
+footer a {
+  font-size: 1rem;
+  text-decoration: none;
+  color: #323a45;
+  font-weight: lighter;
+}
+
+footer p {
+  font-size: 1.2rem;
+}
+
+.shop {
+  grid-column: 1/2;
+}
+
+.contact {
+  grid-column: 2/3;
+}
+
+.newsletter {
+  grid-column: 3/4;
+}
+
+.socialMedia {
+  grid-column: 4/5;
+}
+
+.copyright {
+  padding: 45px 0 5px 0;
+  font-size: 1rem;
+  color: #848484;
+  font-weight: lighter;
+}
+
+.contact,
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  padding: 0 5px;
+}
+
+.shop p {
+  margin-right: 20px;
+}
+
+/* - Hover-Images  */
+
+img:hover {
+  opacity: 0.7;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+/* - Media Queries */
+
+@media only screen and (max-width: 768px) {
+  .imageGallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  footer {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .shop {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .contact {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .newsletter {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    padding: 20px 0;
+  }
+
+  .socialMedia {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    padding: 20px 0;
+  }
+
+  .copyright {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }
