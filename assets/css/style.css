@@ -1,0 +1,84 @@
+@font-face {
+  font-family: Karla;
+  src: url("../fonts/Karla-VariableFont_wght.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-weight: 400;
+  font-family: Karla;
+  font-size: 62.25%;
+}
+
+body {
+  margin: 0 40px;
+}
+
+/* - Header */
+
+h1 {
+  font-size: 2rem;
+  color: #323a45;
+}
+
+header {
+  text-transform: uppercase;
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  font-size: 1rem;
+  color: #323a45;
+  margin: 0 0 0 60px;
+  text-decoration: none;
+}
+
+/* - Image Design */
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.bigImage {
+  margin-bottom: 40px;
+}
+
+/* - Description */
+
+.description {
+  display: flex;
+  align-items: first baseline;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+
+.leftInfo {
+  display: inline-block;
+}
+
+.leftInfo h2 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.brand {
+  color: #848484;
+}
+
+/* - Image Gallery */
+
+.imageGallery {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
